@@ -40,10 +40,10 @@ const FriendRequests = ({userID, fetchFriends}) => {
                     {friendRequests.map((request) => (
                         <li key={request._id}>
                             <span>{request.sender_id}</span>
-                            <button onClick={() => handleResponse(request._id, request.sender_id, true)}>
+                            <button className="accept" onClick={() => handleResponse(request._id, request.sender_id, true)}>
                                 Accept
                             </button>
-                            <button onClick={() => handleResponse(request._id, request.sender_id, false)}>
+                            <button className="deny" onClick={() => handleResponse(request._id, request.sender_id, false)}>
                                 Deny
                             </button>
                         </li>

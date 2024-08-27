@@ -26,3 +26,29 @@
 .friend-requests li:last-child{
     border-bottom: none;
 }
+
+.accept {
+    padding: 5px 10px;
+    background-color: #4fbf26;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.deny {
+    padding: 5px 10px;
+    background-color: #ff0e0e;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.accept:hover {
+    background-color: #4fbf2688;
+}
+
+.deny:hover {
+    background-color: #ff0e0e85;
+}
